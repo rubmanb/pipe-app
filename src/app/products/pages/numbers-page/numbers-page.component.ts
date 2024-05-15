@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NumbersPageComponent {
 
+  public year = new Date().getFullYear();
+  public totalSells: number = 41365123.141519;
+  public percentNumber: number = 0.41564055;
 }

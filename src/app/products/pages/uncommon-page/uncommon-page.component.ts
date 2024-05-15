@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class UncommonPageComponent {
 
+  //i18nSelect pipe
+  public name: string = 'Rubén';
+  public gender: 'hombre'|'mujer' = 'hombre';
+  public invitationMap = {
+    'hombre': 'invitarlo',
+    'mujer': 'invitarla'
+  }
+
+  changeClient() {
+    this.name = 'Lily';
+    this.gender = 'mujer'
+  }
+
+  //i18nPlural pipe
+  public clientes: string[] = ['Rubén', 'Lily', 'Fernando', 'Román', 'Maria', 'Carla', 'Juan Carlos'];
+
+  RemoveCustomer() {
+    this.clientes.pop()
+  }
 }
