@@ -1,3 +1,4 @@
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +8,8 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
+import { CanFlyPipe } from './pipes/fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { OrderComponent } from './pages/order/order.component';
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonPageComponent,
-    OrderComponent
+    OrderComponent,
+    ToggleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
